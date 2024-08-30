@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+@font-face {
+  font-family: norse; src: url(/fonts/Norse-Bold\ \(1\).woff2);
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -26,4 +32,150 @@
 
   #root, #__next {
     isolation: isolate;
+  }
+
+  .container {
+  height: 100vh;
+}
+
+  img {
+    height: 100vh;
+  }
+
+  .left {
+    width: 35vw;
+  }
+
+  .logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35vw;
+    position: absolute;
+    padding: 5px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    top: 200px;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .logo > img {
+    height: 15vh;
+  }
+  
+  .logo > p {
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    font-family: norse;
+    color: white;
+  }
+
+  .right {
+    width: 65vw;
+    background-color: rgb(74, 196, 78);
+  }
+
+  .intro {
+    display: flex;
+    height: 40vh;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+
+  .sign-ups {
+    width: 100%;
+    background-color: rgb(217, 226, 236);
+    padding: 20px;
+  }
+
+  .sign-ups > p {
+    font-family: Matemasie;
+    font-size: 1.4rem;
+  }
+
+  .main-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    font-family: Matemasie;
+    margin-left: 20px;
+  }
+
+  .form-left {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .form-right {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .intro > p {
+    font-family: "Matemasie";
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:valid {
+    border: 2px solid lightgreen;
+  }
+
+  input:focus {
+    border: 2px solid rgb(122, 200, 255);
+    box-shadow: 5px 5px 5px rgb(113, 219, 255);
+  }
+
+  .submit-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  button {
+    border-radius: 15px 15px;
+    width: 200px;
+    height: 100px;
+    font-size: 1.4em;
+    background-color: rgb(205, 255, 205);
+    font-family: norse, sans-serif;
+  }
+
+  button:hover {
+    background-color: aliceblue;
+  }
+
+  .submit-section > p, a {
+    font-family: norse, sans-serif;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+
+  .credit {
+    position: absolute;
+    bottom: 20px;
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
   }
